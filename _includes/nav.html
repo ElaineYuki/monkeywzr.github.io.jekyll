@@ -4,9 +4,16 @@
 
     <ul id="tags__ul">
       <li id="pl__all" class="tags__li tags-btn active">所有文章</li>
-      {% for category in site.categories %} 
-        <li id="{{ category[0] }}" class="tags__li tags-btn">{{ category[0] }}</li>
-      {% endfor %}
+
+        <li id="生活" class="tags__li tags-btn">生活</li>
+       
+        <li id="学习笔记" class="tags__li tags-btn">学习笔记</li>
+
+        <li id="技术" class="tags__li tags-btn">技术</li>
+       
+        <li id="资料" class="tags__li tags-btn">资料</li>
+
+        <li id="读书" class="tags__li tags-btn">读书</li>
     </ul>
 
     <div id="tags__bottom">
@@ -19,7 +26,7 @@
     <form action="" id="search-form">
       <a href="/index.html" id="mobile-avatar" style="background-image:url({{ site.avatar }})"></a>
       <!-- NOTE: input field is disabled by default -->
-      <input id="search-input" type="text" placeholder="Search..." disabled >
+      <input id="search-input" type="text" placeholder="Search..."  >
     </form>
 
     <nav id="pl__container">
