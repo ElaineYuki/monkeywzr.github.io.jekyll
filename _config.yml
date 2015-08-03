@@ -1,9 +1,12 @@
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 highlighter: pygments
+highlight_js: monokai_sublime 
 
 kramdown:
   input: GFM
+  auto_ids: true
+  auto_id_prefix: 'id-'
 
 # 作者信息
 author: 
