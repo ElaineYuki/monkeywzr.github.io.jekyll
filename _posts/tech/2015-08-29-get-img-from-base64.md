@@ -2,8 +2,8 @@
 layout: post
 title: 从教务系统中获取课程表图片
 category: 技术
-tags: 
-keywords: 
+tags: base64
+keywords: base64
 description: 
 ---
 
