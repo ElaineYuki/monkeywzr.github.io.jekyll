@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 国产科幻里程碑----三体
-category: 读书装13
+category: 读书
 keywords: 三体
 ---
 
