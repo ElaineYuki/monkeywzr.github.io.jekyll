@@ -8,7 +8,8 @@ description:
 ---
 
 教务系统中的课表以图片形式显示，又不知何故不允许另存，禁用右键也无效（教务使用体验极差，这方面倒是做的细心V.V），以前是用chrome开发者工具翻一下resource就能找到图片，拖下来就成。
-![图片](/assets/img/images/2015-08-29-get-img-from-base64_1.png)昨天想再把新学期课表存下来发现不行了，直接拖到电脑上不管用，拖到新标签页里一堆乱码
+![图片](/assets/img/images/2015-08-29-get-img-from-base64_1.png)
+昨天想再把新学期课表存下来发现不行了，直接拖到电脑上不管用，拖到新标签页里一堆乱码
 ![图片](/assets/img/images/2015-08-29-get-img-from-base64_2.png)
 拖到sublime text里面，直接变成了整齐的编码
 ![图片](/assets/img/images/2015-08-29-get-img-from-base64_3.png)
