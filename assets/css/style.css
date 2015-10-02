@@ -263,7 +263,7 @@ a {
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
-  cursor: not-allowed; }
+  cursor: allowed; }
   #search-input::-webkit-input-placeholder {
     color: #cbcbcb;
     font-style: italic; }
@@ -452,7 +452,7 @@ iframe {
   padding-left: 40px;
   position: fixed;
   top: 64px;
-  bottom: 0;
+  /*bottom: 0;*/
   right: 0;
   z-index: 98;
   -webkit-transform: translateX(260px);
@@ -464,7 +464,7 @@ iframe {
   -moz-transition: -moz-transform .35s ease-in-out .1s;
   -ms-transition: -ms-transform .35s ease-in-out .1s;
   -o-transition: -o-transform .35s ease-in-out .1s;
-  transition: transform .35s ease-in-out .1s; }
+  transition: transform 0s ease-in-out 0s; }/*此处为右侧索引的动作时间，初始为.35s  .1s*/
   #post__toc-trigger:hover {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -477,8 +477,8 @@ iframe {
 
 #post__toc {
   width: 260px;
-  height: 100%;
-  padding-top: 30px;
+  /*height: 100%;*/
+  padding-top: 10px;
   background: rgba(250, 250, 250, 0.9);
   border-top: 1px solid #e5e8ec;
   border-left: 1px solid #e5e8ec;
