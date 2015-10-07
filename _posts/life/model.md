@@ -1,8 +1,7 @@
 ---
 layout: post
 title: 
-category: 资料
+category: 生活
 tags: 
 keywords: 
-description: 
 ---
