@@ -73,3 +73,33 @@ robots定义网页搜索引擎索引方式,对应content是一组使用英文逗
 >__相关链接__
 >[MSDN文档-搜索引擎优化](https://msdn.microsoft.com/zh-cn/library/ff723998(v=expression.40).aspx)
 >p[MSDN文档-<meta name="robots">](https://msdn.microsoft.com/zh-cn/library/ff724037(v=expression.40).aspx)
+
+mete还可以通过name属性的`msapplication-TileColor``msapplication-TileImage`两个值设置win8磁贴相关样式
+
+		//磁贴颜色
+		<meta name="msapplication-TileColor" content="#000"/>
+		//磁贴图标
+		<meta name="msapplication-TileImage" content="icon.png"/>
+
+## link
+
+link标签最常见的用途是链接样式表
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+link比较常用的属性有`rel``href``type`：`rel`属性是必须的，规定当前文档与被链接文档/资源之间的关系，属性较多，详见底下相关链接；href 属性规定外部资源（通常是样式表文件）的位置（URL）；type 属性规定被链接文档/资源的 MIME 类型，只有设置了`href`属性时才能使用此属性。
+
+
+
+>__相关链接：__
+>[HTML <link> 标签的 rel 属性](http://www.w3school.com.cn/tags/att_link_rel.asp)
+>[IANA MIME类型](http://www.iana.org/assignments/media-types/media-types.xhtml)
+
+两个实例：
+
+		//添加RSS订阅
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+		//添加favicon icon
+		<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+
