@@ -84,7 +84,7 @@ BIOS并不支持GPT，目前主要的开机方式无非BIOS+MBR引导和UEFI+GPT
 
 UEFI主要是依靠载入各种驱动程序来完成系统自检等工作，读取GPT分区表，载入系统。这楼里又要介绍一个ESP分区的概念。
 
-### ESP分区
+#### ESP分区
 
 >ESP - EFI System partition
 
