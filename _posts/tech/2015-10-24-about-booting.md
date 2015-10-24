@@ -32,7 +32,7 @@ GPT表的最开头，有一块类似MBR的表头，称为PMBR，存有引导程�
 ![img](/assets/img/images/2015-10-23-about-booting_3.png)
 
 >__相关链接__
->[4K对齐]()
+>[4K对齐](https://zh.wikipedia.org/wiki/4K%E5%AF%B9%E9%BD%90)
 
 ### BIOS
 
