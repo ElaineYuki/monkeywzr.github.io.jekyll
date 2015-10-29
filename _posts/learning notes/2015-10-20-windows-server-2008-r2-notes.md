@@ -17,8 +17,8 @@ description:
 >GPO - Group Policy Object 组策略对象
 >GC - global catalog 全局编录
 >LDAP - Lightweight Directory Access Protocol 轻型目录访问协议
->
->
+>DN - distinguished name 可分辨名称
+>WSH - Windows Scripting Host Windows脚本宿主
 >
 
 
