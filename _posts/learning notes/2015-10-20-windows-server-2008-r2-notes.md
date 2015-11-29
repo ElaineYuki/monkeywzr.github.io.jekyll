@@ -22,3 +22,7 @@ description:
 >
 
 
+计算机在加入域的时候，会自动创建一个计算机账户。默认情况下该账户在Computer容器中，可通过redircmp命令修改这一设置。
+
+		redircmp DN
+
