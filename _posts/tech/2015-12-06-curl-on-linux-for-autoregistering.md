@@ -35,12 +35,27 @@ Fiddler抓包发现此网站登陆时url为/User/Login/ajaxLogin，post提交用
 
 ![img](/assets/img/images/2015-12-04-zimuzu-auto-login_7.png)
 
-于是我考虑使用登录完成后的cookie直接向/user/sign/dosign发送请求，结果总是返回错误状态
-
 ![img](/assets/img/images/2015-12-04-zimuzu-auto-login_8.png)
 
-使用登陆之后的cookie模拟打开/user/sign却可以正常返回页面。
-为啥就不行呢。。我就又回过头仔细看了下包。cookie有两个键，后面的GKEY引起了我的注意。一开始以为这个GKEY在一个会话是不会改变的，
+json里面的info表示签到结果，1为成功。data为连续签到天数。
 
-## 尝试
 
+
+
+## 开搞
+
+OK！开始祭出杀气__curl__，一开始是用的php，但是向dosign发送请求总是返回错误状态，可能是那里的curl参数配置错了，找个时间再回过头去看一下。。就不说这个了。
+
+后来决定干脆直接上linux写脚本。我水平比较low。。就是简单的3个请求，存一下cookie，也没搞啥复杂东西。
+
+![img](/assets/img/images/2015-12-04-zimuzu-auto-login_9.png)
+
+先简单在本地测试了一下
+
+![img](/assets/img/images/2015-12-04-zimuzu-auto-login_10.png)
+
+![img](/assets/img/images/2015-12-04-zimuzu-auto-login_11.png)
+
+哈哈，大功告成！！
+
+最后把脚本丢到了vps上跑，crontab添加一条定时任务，每天凌晨啪啪啪~~麻麻再也不用担心我的签到~~
