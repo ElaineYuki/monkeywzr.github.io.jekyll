@@ -1,0 +1,36 @@
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: pygments
+highlight_js: monokai_sublime
+
+kramdown:
+  input: GFM
+  auto_ids: true
+  auto_id_prefix: 'id-'
+
+# 作者信息
+author: 
+  name: 吴泽冉
+  email: monkeywzr@gmail.com
+  link: http://monkeywzr.github.io
+  weibo: http://weibo.com/
+  github: http://github.com/monkeywzr
+
+# 站点信息
+title: 小灰机的博客 
+description: 小灰机的博客
+url: http://monkeywzr.github.io
+rss_url: /pages/atom.xml
+
+# avatar头像及Favicon
+avatar: /assets/img/head.jpg
+favicon: /assets/img/blog_16.ico
+
+# google analytics 设置
+# ga:
+#   id: UA-54767140-1
+#   url: yansu.org
+
+# disqus 设置
+disqus:
+  shortname: wzr
