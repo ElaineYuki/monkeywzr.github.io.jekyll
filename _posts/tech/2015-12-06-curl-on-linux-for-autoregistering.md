@@ -31,14 +31,16 @@ Fiddler抓包发现此网站登陆时url为/User/Login/ajaxLogin，post提交用
 
 通过我的测试发现这两个请求并不会影响cookie的变化，不模拟也完全没问题。
 
-签到页面url为/user/sign,继续fiddler抓包
+签到页面url为/user/sign,签到按钮通过js控制15s后才可以点击，点击后fiddler抓到了/user/sign/dosign的请求，request包里面看起并没有什么新内容，response返回了一个json
 
 ![img](/assets/img/images/2015-12-04-zimuzu-auto-login_7.png)
 
-签到按钮通过js控制15s后才可以点击，点击后fiddler抓到了/user/sign/dosign的请求，request包里面看起并没有什么新内容，response返回了一个json
+于是我考虑使用登录完成后的cookie直接向/user/sign/dosign发送请求，结果总是返回错误状态
 
 ![img](/assets/img/images/2015-12-04-zimuzu-auto-login_8.png)
 
-
+使用登陆之后的cookie模拟打开/user/sign却可以正常返回页面。
+为啥就不行呢。。我就又回过头仔细看了下包。cookie有两个键，后面的GKEY引起了我的注意。一开始以为这个GKEY在一个会话是不会改变的，
 
 ## 尝试
+
