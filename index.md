@@ -12,5 +12,6 @@ title: 我的博客
 
 我的博客源码托管在[Github](https://github.com/monkeywzr/monkeywzr.github.io)上，欢迎fork。
 
-欢迎使用我的分享链接注册DO，有优惠~
+欢迎使用我的分享链接注册DO，首次注册会赠送$10~
+
 >[https://m.do.co/c/89c5fed715bf](https://m.do.co/c/89c5fed715bf)
