@@ -122,3 +122,15 @@ description:
     - -h human-readable
     - -s 显示每个输出参数的总计
 
+### 系统和权限
+
+* `set` 显示进程的所有环境变量
+* `export` var 将局部变量导出为全局变量
+* `unset` var 删除环境变量
+* `alias` 设置命令别名
+    - -p 显示已有的别名列表
+实例：
+        
+        //定义命令别名
+        alias li='ls -il'
+
