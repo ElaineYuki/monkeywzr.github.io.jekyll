@@ -1,6 +1,6 @@
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 highlight_js: monokai-sublime
 
 kramdown:
