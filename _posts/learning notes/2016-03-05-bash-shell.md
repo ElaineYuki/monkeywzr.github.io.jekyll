@@ -60,20 +60,20 @@ description:
     - -t 指定字段分隔符
     - -k 指定排序字段
 * `tail` 显示文件末尾的内容
-    - -c bytes 显示文件最后的bytes字节的内容
-    - -n lines 显示文件最后的lines行
+    - -c *bytes* 显示文件最后的bytes字节的内容
+    - -n *lines* 显示文件最后的lines行
     - -f 保持活动，有有新内容添加到末尾就显示
     - -s sec 与-f一起，每次输出前休眠sec秒ps
     - -v 显示带文件名的头
     - -q 从不显示带文件名的头
 * `head` 显示文件开头的内容，类似tail
-* `grep` [option] pattern [file] 查找文件中大的一行数据
+* `grep` *[option] pattern [file]* 查找文件中大的一行数据
     - -v 输出不匹配的行
     - -n 显示匹配行的行号
     - -c 输出匹配的行数
     - -e 指定多个匹配字符串（满足任意一个），通常用正则表达式替代
 * `egrep` 支持POSIX扩展正则表达式
-* `tar` function [options] obj1 obj2 归档
+* `tar` *function [options] obj1 obj2* 归档
     - -A 将一个tar文件追加到另一个tar文件
     - -c 创建新的tar归档文件
     - -r 追加文件到tar文件末尾
@@ -96,7 +96,7 @@ description:
 * `ps` 检测进程
     - -A 显示所有进程
     - -e 显示所有进程
-    - -p pidlist 显示指定pid的进程
+    - -p *pidlist* 显示指定pid的进程
     - -f 显示完整格式的输出
     - -F 显示更多额外输出（相对-f而言）
     - -l 显示长列表
@@ -104,9 +104,9 @@ description:
     - -H 用层级格式显示进程
     - --forest 图表形式显示层级信息
 * `top` 实时显示进程信息，__很有用__，详见man
-* `kill` pid 结束进程（默认发送TERM信号）
-    - -s signal 发送其他信号
-* `killall` name 通过进程名结束进程
+* `kill` *pid* 结束进程（默认发送TERM信号）
+    - -s *signal* 发送其他信号
+* `killall` *name* 通过进程名结束进程
 * `mount` 挂载媒体设备，详见man
 实例：
         
@@ -125,12 +125,25 @@ description:
 ### 系统和权限
 
 * `set` 显示进程的所有环境变量
-* `export` var 将局部变量导出为全局变量
-* `unset` var 删除环境变量
+* `export` *var* 将局部变量导出为全局变量
+* `unset` *var* 删除环境变量
 * `alias` 设置命令别名
     - -p 显示已有的别名列表
 实例：
         
         //定义命令别名
         alias li='ls -il'
+
+* `useradd` 创建用户
+    - -c *comment* 添加备注
+    - -d *home_dir* 为主目录指定一个名字（默认即home）
+    - -D *YYYY-MM-DD* 显示设置用户的系统默认值
+    - -g *initial_group* 指定用户登录组的GID或组名
+    - -G *group* 指定除登录组外的附加组
+    - -k 与-m一起使用，将/etc/skel目录的内容复制到HOME目录，（bash shell的标准启动文件）
+    - -m 创建HOME目录
+    - -r 创建系统用户
+    - -p *passwd* 指定默认密码
+    - -s *shell* 指定默认登录shell
+    - -u *uid* 为账户指定唯一的uid
 
