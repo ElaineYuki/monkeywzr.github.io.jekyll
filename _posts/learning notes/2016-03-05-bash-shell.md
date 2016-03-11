@@ -62,7 +62,7 @@ description:
 * `tail` 显示文件末尾的内容
     - -c *bytes* 显示文件最后的bytes字节的内容
     - -n *lines* 显示文件最后的lines行
-    - -f 保持活动，有有新内容添加到末尾就显示
+    - -f 保持活动，有新内容添加到末尾就显示
     - -s sec 与-f一起，每次输出前休眠sec秒ps
     - -v 显示带文件名的头
     - -q 从不显示带文件名的头
@@ -146,4 +146,13 @@ description:
     - -p *passwd* 指定默认密码
     - -s *shell* 指定默认登录shell
     - -u *uid* 为账户指定唯一的uid
+* `userdel` 删除用户（默认只删除/etc/passwd文件中的用户信息）
+    -  -r 删除HOME目录和mail目录
+* `usermod` 修改用户信息，参数与useradd基本相同
+    - -l 修改用户登录名
+    - -L 锁定账户，无法登录
+    - -p 修改账户密码
+    - -U决出锁定
+* `groupadd` 添加新组
+* 
 
