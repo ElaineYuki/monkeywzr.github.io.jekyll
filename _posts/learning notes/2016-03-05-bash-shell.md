@@ -72,6 +72,7 @@ description:
     - -n 显示匹配行的行号
     - -c 输出匹配的行数
     - -e 指定多个匹配字符串（满足任意一个），通常用正则表达式替代
+    - -i 忽略大小写
 * `egrep` 支持POSIX扩展正则表达式
 * `tar` *function [options] obj1 obj2* 归档
     - -A 将一个tar文件追加到另一个tar文件
@@ -152,7 +153,17 @@ description:
     - -l 修改用户登录名
     - -L 锁定账户，无法登录
     - -p 修改账户密码
-    - -U决出锁定
+    - -U 解除锁定
+    - -G _groupname username_ 将用户添加至组
 * `groupadd` 添加新组
-* 
+* `umask` 设置默认权限（掩码）
+* `chmod` 设置文件和目录权限
+    - +r 添加读取权限
+    - +w 写入权限
+    - +x 执行权限
+* `chown` _optoins owner[.group] filename_ 改变文件的属主
+    - -h 改变文件的所有符号连接的所属关系
+    - -R 递归
+* `chgrp` 改变文件或目录的默认属组
+
 
