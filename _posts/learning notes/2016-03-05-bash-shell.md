@@ -91,6 +91,13 @@ description:
         //解压.tgz
         tar -zxvf filename.tgz
 
+* `ln` *option source_file dist_file* 
+	- -b 覆盖已有的链接
+	- -f 强制执行
+	- -i 交互模式，提示是否覆盖等
+	- -n 把符号链接视为一般目录
+	- -s 软链接（即符号链接）
+	- -v 显示详细过程
 
 ### 进程和设备管理
 
