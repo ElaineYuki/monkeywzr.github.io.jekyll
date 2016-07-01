@@ -3,7 +3,7 @@ layout: post
 title: 简记oath2.0
 category: 学习笔记
 tags: [oauth2]
-keywords:oauth2
+keywords: oauth2
 description:
 ---
 
